@@ -1,0 +1,25 @@
+$opacity = 0,
+           10,
+           20,
+           40,
+           75
+
+for oat in $opacity
+  .o-{oat}
+    opacity (oat/100)
+
+
+$opactiy-hover = 50,
+                 70
+
+for oth in $opactiy-hover
+  .o-hover-{oth}
+    opacity 1
+    &:hover
+      opacity (oth/100)
+
+
+.o-active-50
+  // @extend .ease-400
+  &:active
+    opacity .5

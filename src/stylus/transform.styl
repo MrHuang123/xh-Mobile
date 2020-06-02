@@ -1,0 +1,59 @@
+// 过渡时间
+.ease-300
+  transition: all ease .3s
+.ease-400
+  transition all ease .4s
+
+.scale-70
+  transform: scale(0.7) 
+.scale-50
+  transform: scale(0.5)
+.scale-100
+  transform: scale(1)
+.scale-50-active
+  @extend .ease-400
+  &:active
+    transform: scale(0.5)
+.scale-80-active
+  @extend .ease-300
+  &:active
+    transform: scale(0.8)
+.scale-150-active:active
+  @extend .ease-400
+  &:active
+    transform: scale(1.5)
+
+.translateX-per-100
+  transform: translateX(100%)
+.translateX-per-100-reverse
+  transform: translateX(-100%)
+.translateY-per-200-reverse
+  transform: translateY(-200%)
+.translateX-per-50
+  transform: translateX(50%)
+.translateX-per-50-reverse
+  transform: translateX(-50%)
+
+.translateX-50
+  transform: translateX(50px)
+.translateX-50-reverse
+  transform: translateX(-50px)
+
+.translateY-per-100-reverse
+  transform translateY(-100%)
+.translateY-40-reverse
+  transform: translateY(-40px)
+.translateY-per-100-reverse-center
+  transform translateY(-100%) translateX(-40%)
+
+
+// 阴影部分
+.shadow-app
+  box-shadow 0px 0px 20px 0px rgba(0,0,0,0.05)
+
+
+.rotate-45
+  transform: rotate(45deg)
+.rotate-90
+  transform: rotate(90deg)
+

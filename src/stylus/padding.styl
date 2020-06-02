@@ -1,0 +1,100 @@
+// 会生成数组中的padding-top、padding-bottom、padding-left、padding-right等类
+/*
+  $range-padding,中每一个数字都会生产该数字下的7个类名，用继承性，机会不用担心冗余
+  如数字5下7个类名分别为：
+  .p-t-5{padding-top:5px}
+  .p-b-5{padding-bottom:5px}
+  .p-l-5{padding-left:5px}
+  .p-r-5{padding-right:5px}
+  .p-tb-5{padding-top:5px;padding-bottom:5px;}
+  .p-lr-5{padding-left:5px;padding-right:5px;}
+  .p-5{padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;}
+
+*/ 
+
+// 注意：最后一位数不要加逗号
+
+$range-padding = 1,
+                2,
+                5,
+                6, 
+                10, 
+                15,
+                16,
+                20,
+                22,
+                24, 
+                25, 
+                30,
+                32, 
+                35,
+                36,
+                38,
+                40,
+                42,
+                45, 
+                46,
+                47,
+                48,
+                50, 
+                55, 
+                60,
+                64,
+                65, 
+                70,
+                72,
+                75,
+                78, 
+                80,
+                92,
+                100,
+                115,
+                120,
+                130,
+                140,
+                160,
+                170,
+                180,
+                188,
+                220
+
+for padding in $range-padding
+  .p-t-{padding}
+    padding-top (padding)px
+  .p-l-{padding}
+    padding-left (padding)px
+  .p-b-{padding}
+    padding-bottom (padding)px
+  .p-r-{padding}
+    padding-right (padding)px
+  .p-tb-{padding}
+    @extend .p-t-{padding}
+    @extend .p-b-{padding}
+  .p-lr-{padding}
+    @extend .p-l-{padding}
+    @extend .p-r-{padding}
+  .p-{padding}
+    @extend .p-t-{padding}
+    @extend .p-b-{padding}
+    @extend .p-l-{padding}
+    @extend .p-r-{padding}
+
+.p-t-no
+  padding-top 0!important
+.p-b-no
+  padding-bottom 0!important
+.p-l-no
+  padding-left 0!important
+.p-r-no
+  padding-right 0!important
+.p-lr-no
+  @extend .p-l-no
+  @extend .p-r-no
+.p-tb-no
+  @extend .p-t-no
+  @extend .p-b-no
+.p-no
+  @extend .p-l-no
+  @extend .p-r-no
+  @extend .p-t-no
+  @extend .p-b-no

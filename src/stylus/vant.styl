@@ -1,0 +1,173 @@
+// 放置vant重置样式
+//cell重置
+.van-hairline--top-bottom::after
+  border: none!important
+  border-width 0!important
+.van-cell
+  height  88px
+  line-height 88px!important
+  padding  0
+  margin  0
+  display:-webkit-box;
+  display flex
+  align-items center
+  // justify-content flex-start
+  margin-bottom 2px
+  border-bottom 1px solid #F6F6F6!important
+.van-cell::after
+  border none!important
+.cell_filed
+  border-bottom 1px solid #C63639!important
+  transition border-bottom 1s;
+.van-field__left-icon
+    margin-right 12px
+.cell_active
+  border-bottom 1px solid #1C71B7!important
+  transition border-bottom 1s;
+  .van-cell__title
+      box-sizing border-box
+      line-height 88px
+      padding-left 32px
+      font-size 28px
+      font-family PingFangSC-Regular
+      font-weight 400
+      color #333333
+      width 60%
+      span 
+        color #333333
+        text-overflow:ellipsis;
+        white-space:nowrap
+        display inline-block
+        width 100%
+  .van-cell__value
+      // padding-right 16px
+      box-sizing border-box
+      display flex
+      align-items center
+      line-height 88px
+  .van-field__control
+    display flex
+    align-items center
+//nevBar重置
+.van-nav-bar
+  height 100px!important
+  line-height 100px!important
+  display: flex
+  align-items: center
+  .van-nav-bar__left
+    left 32px
+  .van-nav-bar__right
+    right 32px
+  .van-nav-bar__title
+    color #fff
+    height:44px;
+    font-size:32px;
+    font-family:PingFangSC-Semibold;
+    font-weight:600;
+    line-height:44px;
+// dialog重置
+.van-dialog
+    border-radius 8px!important
+    @extend .shadow-app
+.van-dialog__message
+   @extend .f-s-28
+   line-height 40px
+   padding 50px !important
+   white-space: normal!important
+.van-dialog__footer
+    .van-dialog__cancel
+      .van-button__text
+         color #333
+    .van-button
+        @extend .h-90
+    .van-button__text
+        @extend .f-s-32
+        color #1C71B7
+        font-weight 600
+
+// 时间选择器重置
+.van-picker.van-datetime-picker
+  box-shadow:0px -4px 8px 0px rgba(0,0,0,0.1);
+  @extend .b-f6f6f6
+  @extend .b-w-1
+.van-hairline--top-bottom.van-picker__toolbar
+  height 88px!important
+  line-height @height
+  @extend .p-lr-30
+  >div
+    @extend .f-s-32
+    @extend .c-1C71B7
+.van-steps--horizontal .van-steps__items
+  overflow: visible!important
+.van-step--horizontal .van-step__line
+  height 2px!important
+.van-step__circle
+  height 16px!important
+  width @height
+.van-step--horizontal .van-step__circle-container
+  top 22px!important
+// .van-step__circle
+  // background #999
+.van-step--horizontal.van-step--process .van-icon
+  font-size 32px!important
+.van-step--horizontal.van-step--process .van-step__circle-container
+  top 15px!important
+.van-steps
+  overflow: visible!important
+// .van-picker-column
+//   height 426px !important
+// .van-picker-column__item
+//   height 88px !important
+//   line-height @height
+// .van-picker-column__item--selected
+//    @extend .h-88
+
+// input框
+
+.van-notify
+  z-index 10000000!important
+  line-height 50px!important
+  font-size 28px!important
+  padding 12px 30px !important
+
+.van-picker__columns
+  border-top 2px solid #eee
+.van-picker__frame, .van-picker__loading .van-loading
+  border-top: 1px solid #f6f6f6
+  border-bottom: 1px solid #f6f6f6
+
+.van-toast--default .van-loading
+  margin 0.2rem 0 !important
+.van-loading
+  height .6rem!important
+  width @height
+.van-toast--default
+  width 1.9rem!important
+  height @width
+.van-toast--text
+  padding .16rem 0.24rem!important
+.van-toast
+  line-height .4rem!important
+  text-align: center!important
+
+//Toast 轻提示
+// .van-toast--text
+//   padding 40px!important
+.search-input
+  .van-cell 
+    .van-field__left-icon
+      margin-right 12px
+  .van-field__body
+    width 100%
+
+  .van-cell__value
+    height 100%!important
+    width 100%!important
+    display: flex
+    align-items: center
+    justify-content flex-end!important
+  .van-field__control
+    margin-top 0 !important
+    height .5rem!important
+    line-height .5rem!important
+    width 100%

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style='fontSize:100px;'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-Frame-Options" content=" sameorigin" />
+    <meta name="keywords" content="business credit report,business credit score,credit,credit report,enterprise credit,risk evaluation"/>
+    <title>Xinhua Credit</title>
+    <script src="<%= htmlWebpackPlugin.options.cookie %>"></script>   
+    <script type="text/javascript">
+        !!Cookies.get('access_token') && (function(){
+            localStorage.access_token=Cookies.get('access_token');
+        })();
+        (function () {
+            if(window.location.pathname == '/summit'){
+                const setRem = () => {
+                    let vw = document.documentElement.clientWidth
+                    document.querySelector('html').style.fontSize = vw / 10.8 + 'px'
+                }
+                setRem()
+                window.onresize = setRem
+            }else{
+                const setRem = () => {
+                    let vw = document.documentElement.clientWidth
+                    document.querySelector('html').style.fontSize = vw / 7.5 + 'px'
+                }
+                setRem()
+                window.onresize = setRem
+            }
+        }())
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6dcbb5c1c13fe2f8eced0c18673008c2";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.ico %>">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1096371_wyqfzybpixj.css">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.style %>">
+    
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script>
+    <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script> -->
+    <script src="<%= htmlWebpackPlugin.options.vue %>"></script>    
+    <script src="<%= htmlWebpackPlugin.options.moment %>"></script>    
+    <script src="<%= htmlWebpackPlugin.options.router %>"></script>    
+    <script src="<%= htmlWebpackPlugin.options.vuex %>"></script>
+    <script src="<%= htmlWebpackPlugin.options.fingerprint2 %>"></script>      
+    <script src="<%= htmlWebpackPlugin.options.script %>"></script>
+</body>
+</html>

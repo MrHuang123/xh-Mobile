@@ -1,0 +1,114 @@
+// 其他没有的范围可自行添加，如.f-s-50
+
+
+// 设置font-family: 形式 --- .f-f-simSun .f-f-simHei
+$family = simSun,
+          simHei,
+          MiscroSoft,
+          PingFangSC-Semibold,
+          PingFangSC-Medium,
+          PingFangSC-Regular,
+          ArialMT,
+          Arial-BoldMT
+
+for family in $family 
+  .f-f-{family}
+    font-family family
+
+// 设置font-bold: 形式 --- .f-w-600 .f-w-400
+$bold = 400,
+        500,
+        600,
+        700
+
+for bold in $bold
+  .f-w-{bold}
+    font-weight bold
+
+// 设置font-size: 形式 --- .f-s-12 .f-s-14 .f-s-20
+$size = 12,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        64,
+        88,
+        90,
+        92
+
+for size in $size
+  .f-s-{size} 
+    font-size (size)px!important
+
+// 字色相关
+.c-000
+  color #000
+.c-333
+  color #333
+.c-666
+  color #666666
+.c-999
+  color #999
+.c-aaa
+  color #aaa
+.c-ccc
+  color #ccc
+.c-ddd
+  color #ddd
+.c-eee
+  color #eee
+.c-fff
+  color #fff
+.c-fff-70
+  color rgba(#fff,.7)
+.c-fff-50
+  color rgba(#fff,.5)
+.c-FFBB47
+  color #FFBB47
+.c-32BA59
+  color #32BA59
+.c-1C71B7
+  color #1C71B7
+.c-C63639,.c-red
+  color #C63639
+.c-0089D1
+  color #0089D1
+.c-0145A8
+  color #0145A8
+.c-142
+  color rgba(142,142,142,1)
+.c-blue,.c-app
+  @extend .c-1C71B7
+
+.c-blue2
+  color #336AFF
+.c-2D6BD9
+  color #2D6BD9
+.c-0B72E7
+  color:#0B72E7
+.c-0cb72e7
+  color: #0b72e7
+
+
+.break-word
+  word-break: break-word
+
+

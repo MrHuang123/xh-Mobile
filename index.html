@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=en style=fontSize:100px;>
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name=format-detection content="telephone=no">
+    <title>Xinhua Credit</title>
+    <script type=text/javascript>
+        (function () {
+            const setRem = () => {
+                let vw = document.documentElement.clientWidth
+                document.querySelector('html').style.fontSize = vw / 7.5 + 'px'
+            }
+            setRem()
+            window.onresize = setRem
+        }())
+    </script>
+    <link rel="shortcut icon" href=/static/favicon.ico>
+    <link rel=stylesheet href=//at.alicdn.com/t/font_1096371_i9zz5gubdkf.css>
+    <link rel=stylesheet href=/dist/css/app.2019-7-5-854.css>
+    
+</head>
+<body>
+    <div id=app></div>
+    <script src=/static/lib/vue.min.js></script>    
+    <script src=/static/lib/moment.js></script>    
+    <script src=/static/lib/vue-router.min.js></script>    
+    <script src=/static/lib/vuex.min.js></script>    
+    <script src=/dist/js/app.2019-7-5-854.js></script>
+</body>
+</html>
